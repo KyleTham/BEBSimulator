@@ -31,6 +31,6 @@ public class Node {
 
     void collision(int frameTimes){
         int rand = new Random().nextInt(frameTimes);
-        this.timeSlotsToSkip = rand;
+        this.timeSlotsToSkip = ++rand;
     }
 }
